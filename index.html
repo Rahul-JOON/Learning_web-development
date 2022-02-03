@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning CSS</title>
+    <link rel="stylesheet" href="CSScoding.css">
     <style>
         h5{
             color: cornflowerblue;
@@ -32,15 +33,82 @@
         <li>External CSS</li>
         <p>This is the CSS method i will using the most as in this way you create a serparte file of css containing all the instructions for the html formatting and simply in corporate it in the html file. This does not need an example as I will be using this method throughout</p>
     </ol>
-    <h1>Now i will be going over selectors</h1>
-    <h3>So selectors are basically different ways to select the elements of Html to give them relevant formatting. </h3>
-    <h4>Syntax :</h4>
-    <span style="margin-left: 40px;">Selector {property : value; property ; value; .....}</span>
-    <br>
-    <br>
-    <br>
-    <img src="images/CSS selectors overview table.png" alt="Error Produced" width="40%">
-    <img src="images/Selectors syntax.png" alt="Error Produces" width="40%">
-    
+        <h1>Now i will be going over selectors</h1>
+        <h3>So selectors are basically different ways to select the elements of Html to give them relevant formatting. </h3>
+        <h4>Syntax :</h4>
+        <span style="margin-left: 40px;">Selector {property : value; property ; value; .....}</span>
+        <br>
+        <br>
+        <br>
+        <img src="images/CSS selectors overview table.png" alt="Error Produced" width="40%">
+        <img src="images/Selectors syntax.png" alt="Error Produces" width="40%">
+
+        <h2>Now I will be creating a serparte CSS file and writing all the css code there, tho all the changes will be shown here since this file will be incoroporating that css file as its styling.</h2>
+        <ol type="I">
+
+        <li>
+            <p class="Blue_ptags">Now I will change all the p tags to be colored as blue</p>
+        </li>
+
+        <p class="Blue_ptags"> We can also use selectors combined </p>
+
+        <p>link looks something like this</p>
+        <a href="#">Link</a>
+        
+        <p>but using combined seletors, we can make it look like ptags</p>
+        <p class="red_ptags">Now change the color to red and add the link <a class="redlinks" href="#">Link</a></p>
+        <p>Now you can use selector to change many things for example:</p>
+        <ul>
+        <li class="Samplelist">Changing the style of list bullets etc.</li>
+        <li class="Samplelist">Like this</li>
+        </ul>
+
+        <li><p>Now this shit is changing the formatting of all the specified tags in the document
+            to avoid that, classes or ids are useful.</li>
+            You can name some classes and ids to the elements which are to have the same styling and then just appoint that in the css code.
+            <br>
+            I have already used classes in the above coloring task so that's done.
+            <br>
+            So far is using id is considered it follows the same methond just instead of '.' we use '#' before specifying the name.
+        </p>
+        <li>
+            <p>So, next we will see how to choose a particular element from elements which share same classes</p>
+        </li>
+        <p>Below ptag, em tags, and li tag share the same class named - special</p>
+        <p>Now we can give property to just any of them by specifying that <span style="color: crimson;"> element.class {property:value}</span></p>
+        
+        <p class='special'> Smaple ptag</p>
+        <ul>
+        <li class='special'> Sample list tag</li>
+        </ul>
+        <em class='special'> Sample em tag</em>
+        <p>I used this syntax to make just the ptag and em tag <em>salmon and bold</em> while all 3 of them shared the same syntax</p>
+        
+        <li>Next up is selecting a element inside another element</li>
+        <p>Below i will be changing the color of em tag only inside the ptag</p>
+        <p>Sample <em>em</em> inside ptag text</p>
+
+        <li> Next is changing the element just next to another element, nothing too serious</li>
+        <h4>Next text will be pink colored</h4>
+        <p>Pink text here</p>
+
+        <li>Now this is a nice one, this pseudo-selector is changing the formatting of element when a given condition takes place</li>
+        <p>For example this link will change its color  and gets bold when hovered : <a class="feedbacklink" href="#">Link</a></p>
+        
+        <li>Another misc method is to use [] brackets to specify things like if the element has some class or a class containing this letter</li>
+        <p>ex: <em class="dummy"> This em tag contains a class named dummy</em></p>
+        <p><em>This em tag doesn't contain any class</em></p>
+        <p><em class="dummy b">This tag contain class named dummy b</em></p>
+        <p><em class="dummy ba">This em tag contain class named dummy ba</em></p>
+        <p>Css implemented :-</p>
+        <ol>
+            <li>Change em tags with class to red</li>
+            <li>Change dummy named class em tags to blue</li>
+            <li>Change em tags that contain b to green</li>
+        </ol>
+        <br>
+        
+        <li>Lastly there a select all selector that is "*"</li>
+    </ol>
 </body>
 </html>

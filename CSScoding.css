@@ -1,0 +1,33 @@
+li.Samplelist, li.special{
+    list-style-type: square;
+}
+.Blue_ptags{
+    color: blue;
+}
+.red_ptags, .redlinks{
+    color: red;
+}
+em.special, p.special{
+    color: salmon;
+    font-weight: bold;
+}
+p em{
+    color: grey;
+}
+h4 + p{
+    color: pink;
+}
+.feedbacklink:hover{
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+em[Class]{
+    color: red;
+}
+em[Class ="dummy"]{
+    color: blue;
+}
+em[Class~="b"]{
+    color: green;
+}
