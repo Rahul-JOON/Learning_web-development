@@ -110,5 +110,107 @@
         
         <li>Lastly there a select all selector that is "*"</li>
     </ol>
+    <hr>
+    <h1> Now Let's start with the Properties of CSS</h1>
+    <p> These will be the actual things that we can do with CSS to format our text</p>
+    <ol>
+        <li>Color</li>
+        <p> Mainly we can color our text in 3 major ways</p>
+        <ol>
+            <li>General coloring using 'color : '</li>
+            <p style="color: blueviolet;">Sample colored text</p>
+
+            <li>Background coloring using 'background color : __'</li>
+            <p style="background-color: green;">Sample Background colored text</p>
+
+            <li>Colored border around text using 'border-color:__'</li>
+            <p style="border-style: solid; border-color: crimson;">Sample colored border</p>
+            <p>
+                Their are about 140 different colors and are dependent on the browser.
+                You can also give colors in form of rgb ranging from 0-255 or even hashvalue.
+                <br>
+                <br>
+                Note : You can also change the opacity level of the text of background color, a easier method is to use the vscode hovering dial
+            </p>
+        </ol>
+
+        <li>Background</li>
+        <ol>
+            <li>Background image</li>
+            <p> As the name suggests its a function to show image in the background using 'background-image: url("location")'</p>
+            <p>You also need to provide some height & width to the background property or you can provide the backgorund size.</p>
+            <p style="background-image: url('images/Screenshot\ 2022-02-05\ 130730.png');height: 260px; color: aqua;">This is a sample of background-image.</p>
+            <p>Now by default the picture repeats itself in both x&y directions</p>
+            <p>To eleminate this we need to use 'background repeat: no-repeat or repeat-x/y'</p>
+            <p>You can also set the picture to either stay fixed or scroll(stick to back in some way) with the user using 'background-attachment: fixed'</p>
+            <p>Lastly you can also set the position of the picture using 'backgorund-position: bottom _px right _px or center/right...' </p>
+            
+            <li>Background Color - as discussed above</li>
+        </ol>
+        <br>
+
+        <li> Fonts</li>
+        <ol>
+            <li> Font-family</li>
+            <p>Defines the basic font ex: Times new roman</p>
+            <p style="font-family: 'Times New Roman', Times, serif;">Sample Font named - 'Times New Roman', Times, serif</p>
+            <p>These fonts are mostly pre-installed in widows system but just in case they are not found, the next comma separated font is used.</p>
+            <p>i.e if times new roman not found then 'Times' will be used.</p>
+            <p>If we wish to use some other font which is not in system like some font from google fonts,</p>
+            <p>We will have copy its link and link it in our html file right above the css linking line, then we can use the font by just naming it.</p>
+
+            <li>Font-size</li>
+            <p>Changes the size of the font using font-size: _px or large/small etc;</p>
+            <p style="font-size: 22px;">Sample 22px size font</p>
+
+            <li>Font-stlye</li>
+            <p>Changes the font to be oblique/italic etc.</p>
+            <p style="font-style: oblique 100deg;">Sample oblique text of 40deg</p>
+        
+            <p>Their are numerous other properties of fonts like font-weight, display etc.</p>
+            <p>You just need to experiment and observe to know it all</p>
+        </ol>
+
+        <li>Text-fomatting</li>
+        <ol>
+            <li>Text-color - as discussed above</li>
+
+            <li>Line-height</li>
+            <p>Give spacing between lines</p>
+            <p style="line-height: 6;">Sampletext with spacing <br>between lines</p>
+
+            <li>Font-weight</li>
+            <p style="font-weight: bold;">Sample bold text</p>
+            
+            <li>text-indent</li>
+            <p style="text-indent: 20px;">Sample 20px indented text</p>
+
+            <li>Word-spacing</li>
+            <p style="word-spacing: 20px;">Sample 20px sapced words</p>
+
+            <li>text-transforamtion</li>
+            <p style="text-transform: uppercase;">Sample uppercase transformed text</p>
+
+            <li>text-decoration</li>
+            <p style="text-decoration: line-through;">Sample line-through text</p>
+
+            <li>text-shadow</li>
+            <p>syntax: text-shadow: offset-x offset-y blur-radius color</p>
+            <p style="text-shadow: 1px 1px 2px black;">Sample syntax: text-shadow: 1px 1px 2px black</p>
+
+            <li>text-allignment</li>
+            <p style="text-align: center;">Sample center alligned text</p>
+        </ol>
+        <h2>Now these were few properties and there are many more which you can toy arround</h2>
+        <h2>Tho sometimes, mentioning all these properties can become cumbersome <br>
+        So shorthand properties are used. <br> Its just the process of mentioning many properties in a single line to save time and energy.</h2>
+        <h2>For example:</h2>
+        <img src="images/background shorthand.png" alt="Error" width="24%">
+        <img src="images/Border shorthand.png" alt="Error" width="25%">
+        <img src="images/Font shorthand.png" alt="Error" width="25%">
+        <img src="images/Margin property.png" alt="Error" width="25%">
+        <h2>Tho you can always search for more shorthand properties syntax on google</h2>
+        <hr>
+    </ol>
 </body>
 </html>
